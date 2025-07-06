@@ -1,0 +1,442 @@
+:root {
+  --primary-color: #7c0c15;
+  --secondary-color: #003399;
+  --hover-color: #ff9900;
+  --background-color: #fff;
+  --active-line-color: #000;
+}
+
+/* BAGIAN RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+/* BAGIAN BODY */
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* BAGIAN MAIN-NAV-CONTAINER (Untuk Desktop) */
+.main-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* BAGIAN LOGO*/
+.logo img {
+  height: 80px;
+  width: 100px;
+}
+
+/* Humburger/Close Icon (Menyembunyikan secara default di desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.menu-toggle .bi-list {
+  display: block;
+}
+
+.menu-toggle .bi-x-circle {
+  display: none;
+}
+
+/* BAGIAN NAVBAR (Desktop) */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar ul li {
+  position: relative;
+  border-right: 1px solid #ccc;
+}
+
+.navbar ul li:last-child {
+  border-right: none;
+}
+
+.navbar ul li a {
+  display: block;
+  position: relative;
+  font-weight: 500;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 20px 25px;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.navbar ul li a:hover {
+  color: var(--hover-color);
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--active-line-color);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.navbar ul li a.active::after {
+  transform: translateX(0);
+}
+
+.navbar ul li a:hover::after {
+  transform: translateX(0);
+}
+
+/* BAGIAN NAVBAR DROPDOWN (Desktop)*/
+.navbar ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--background-color);
+  min-width: 220px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  flex-direction: column;
+}
+
+.navbar ul li ul.dropdown.show {
+  display: flex;
+}
+
+.navbar ul li ul.dropdown li {
+  width: 100%;
+  border-right: none;
+}
+
+.navbar ul li ul.dropdown li a {
+  display: block;
+  padding: 12px 25px;
+  text-align: left;
+  font-size: 16px;
+  color: var(--secondary-color);
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.navbar ul li ul.dropdown li a:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+
+/* BAGIAN NAVBAR DROPDOWN KONTAK KAMI (Desktop)*/
+
+.navbar ul li ul.dropdown li ul.dropdown-kontak {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: var(--background-color);
+  min-width: 220px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  flex-direction: column;
+}
+
+.navbar ul li ul.dropdown li ul.dropdown-kontak.show {
+  display: flex;
+}
+
+.navbar ul li ul.dropdown li ul.dropdown-kontak li {
+  width: 100%;
+}
+
+.navbar ul li ul.dropdown li ul.dropdown-kontak li a {
+  display: block;
+  padding: 12px 25px;
+  text-align: left;
+  font-size: 16px;
+  color: var(--secondary-color);
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.navbar ul li ul.dropdown li ul.dropdown-kontak li a:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+
+.background {
+  background-image: url(image/foto\ sekolahan.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+}
+
+.background::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.background h1 {
+  font-family: "Noto Naskh Arabic", sans-serif;
+  position: fixed;
+  z-index: 10;
+  padding: 180px 500px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.background h2 {
+  font-family: "Roboto", sans-serif;
+  padding: 250px 450px;
+  position: fixed;
+  font-size: 40px;
+  color: var(--hover-color);
+  z-index: 10;
+}
+
+.background .animasi .animasi-text li {
+  font-family: "Roboto", sans-serif;
+  padding: 300px 200px;
+  position: fixed;
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--hover-color);
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.background .animasi .animasi-text li span {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-right: 4px solid var(--hover-color);
+  color: var(--hover-color);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    border-color: var(--hover-color);
+  }
+  50% {
+    border-color: var(--hover-color);
+  }
+}
+
+/* .background h3 {
+  
+} */
+
+/* =================== */
+/* Media Query untuk tampilan mobile */
+/* ==================== */
+
+/* Media Query Navbar */
+@media (max-width: 768px) {
+  .main-nav-container {
+    justify-content: space-between;
+  }
+
+  /* Tampilkan humburger/close icon */
+  .menu-toggle {
+    display: block;
+    z-index: 1002;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  /* Sembunyikan navbar desktop */
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    background-color: var(--background-color);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+    overflow-y: auto;
+    padding-top: 80px;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .navbar ul li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar ul li a {
+    padding: 15px 10px;
+    font-size: 18px;
+    color: var(--secondary-color);
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .navbar ul li a i {
+    font-size: 1rem;
+  }
+
+  .navbar ul li a:hover {
+    background-color: var(--hover-color);
+    color: white;
+  }
+
+  .navbar ul li a::after {
+    display: block;
+  }
+
+  .navbar ul li a.active {
+    background-color: var(--hover-color);
+    color: white;
+  }
+
+  .navbar ul li:hover ul.dropdown {
+    display: none;
+  }
+
+  .navbar ul li ul.dropdown li:hover ul.dropdown-kontak {
+    display: none;
+  }
+
+  /* Gaya menu dropdown untuk tampilan mobile */
+  .navbar ul li ul.dropdown,
+  .navbar ul li ul.dropdown li ul.dropdown-kontak {
+    position: static;
+    display: none;
+    background-color: var(--background-color);
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    padding-left: 20px;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .navbar ul li ul.dropdown.show,
+  .navbar ul li ul.dropdown li ul.dropdown-kontak.show {
+    display: flex;
+    max-height: 500px;
+  }
+
+  .navbar ul li ul.dropdown li a,
+  .navbar ul li ul.dropdown li ul.dropdown-kontak li a {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+  }
+
+  .navbar ul li ul.dropdown li a:hover,
+  .navbar ul li ul.dropdown li ul.dropdown-kontak li a:hover {
+    background-color: var(--hover-color);
+  }
+}
+
+/* Media Query Landing Page */
+@media (max-width: 768px) {
+  .background {
+    position: relative;
+    background-image: url(image/foto\ sekolahan.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    padding: 670px 0 0;
+    overflow: hidden;
+  }
+  .background::after {
+    opacity: 0.7;
+  }
+  /* .background h1 {
+    font-family: "Noto Naskh Arabic", sans-serif;
+    position: fixed;
+    z-index: 10;
+    padding: 180px 500px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  } */
+  /* .animasi .animasi-text {
+    display: block;
+    padding: 100px;
+    width: 100%;
+  } */
+}

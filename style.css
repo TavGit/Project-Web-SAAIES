@@ -410,6 +410,37 @@ body.no-scroll {
   margin-left: 12px;
 }
 
+/* Bagian Banner */
+
+.banner {
+  background-color: #fff;
+}
+
+.banner a img {
+  display: block;
+  margin: 0 auto;
+  padding: 40px;
+  width: 65%;
+  height: auto;
+}
+
+.banner a {
+  text-decoration: none;
+}
+
+.banner h1 {
+  display: block;
+  border-radius: 4px;
+  background-color: #e89c22;
+  text-align: center;
+  font-family: "Robot Slab", sans-serif;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin: 40px 450px 50px 450px;
+  font-size: 1.3rem;
+}
+
 /* =================== */
 /* Media Query untuk tampilan mobile */
 /* ==================== */

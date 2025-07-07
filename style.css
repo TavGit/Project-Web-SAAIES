@@ -772,6 +772,9 @@ body.no-scroll {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .lokasi-item h3 {
@@ -787,6 +790,57 @@ body.no-scroll {
 .lokasi-item i {
   margin-right: 8px;
   color: #04398c;
+}
+
+/* Bagian Qucik Menu */
+
+.quick-menu {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2ef;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 10px 0;
+  z-index: 100;
+  border-top: 1px solid #ddd;
+}
+
+.quick-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.quick-menu a i {
+  font-size: 28px;
+  color: #04398c;
+  margin-bottom: 5px;
+}
+
+.quick-menu a:hover {
+  color: var(--hover-color);
+}
+
+/* Bagian Footer */
+
+.footer {
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--hover-color);
 }
 
 /* =================== */

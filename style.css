@@ -443,32 +443,46 @@ body.no-scroll {
 
 /* Bagian Info */
 
-.info {
-  display: relative;
-  background-color: #062667;
-  padding: 20px;
-  overflow: hidden;
+.info-utama {
+  background-color: var(--secondary-color);
+  padding: 20px 0;
 }
 
-.info-section {
-  padding: 0 220px;
+.info-menu {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
-.info-section .icon {
-  font-size: 2em;
-  padding: 0 35px 5px;
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
 }
 
-.info-section a {
+.info-item i {
+  font-size: 32px;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.info-item a {
   text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
 }
 
-.info-section h4 {
-  font-family: "Roboto Slab";
-  color: white;
-  font-size: 1.3rem;
+.info-item:hover i,
+.info-item:hover a {
+  color: var(--hover-color);
 }
+
+/* Bagian Akreditasi */
 
 .akreditasi {
   background-color: #fff;
@@ -648,3 +662,5 @@ body.no-scroll {
     font-size: 2.5rem;
   }
 }
+
+/* Media Query Info */

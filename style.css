@@ -420,7 +420,7 @@ body.no-scroll {
   display: block;
   margin: 0 auto;
   padding: 40px;
-  width: 65%;
+  width: 850px;
   height: auto;
 }
 
@@ -439,6 +439,39 @@ body.no-scroll {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   margin: 40px 450px 50px 450px;
   font-size: 1.3rem;
+}
+
+/* Bagian Info */
+
+.info {
+  display: relative;
+  background-color: #062667;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.info-section {
+  padding: 0 220px;
+}
+
+.info-section .icon {
+  font-size: 2em;
+  padding: 0 35px 5px;
+  color: white;
+}
+
+.info-section a {
+  text-decoration: none;
+}
+
+.info-section h4 {
+  font-family: "Roboto Slab";
+  color: white;
+  font-size: 1.3rem;
+}
+
+.akreditasi {
+  background-color: #fff;
 }
 
 /* =================== */

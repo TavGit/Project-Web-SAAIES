@@ -1,0 +1,219 @@
+:root {
+  --primary-color: #7c0c15;
+  --secondary-color: #003399;
+  --hover-color: #ff9900;
+}
+
+/* BAGIAN RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+/* Bagian Sejarah */
+
+.sejarah .image-wrapper,
+.sejarah .image-wrapper img {
+  width: 280px;
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 20px auto;
+  position: relative;
+}
+
+.sejarah .image-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sejarah-item {
+  background-color: var(--primary-color);
+  padding: 40px 0;
+}
+
+.sejarah-item h1 {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* Bagian Sejarah Caption */
+
+.sejarah-caption .caption-1 {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+
+.sejarah-caption .caption-2 {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+
+/* Bagian Segera Daftar */
+
+.segera-daftar {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+}
+
+.segera-daftar-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.segera-daftar-item h2 {
+  font-family: "Roboto Slab";
+  font-weight: 600;
+  color: white;
+  flex-shrink: 1;
+  margin: 0;
+}
+
+.segera-daftar .btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+}
+
+.segera-daftar .btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.segera-daftar .btn:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.segera-daftar .btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.segera-daftar .btn:active {
+  transform: scale(0.9);
+}
+
+.segera-daftar .btn a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.segera-daftar .btn:hover a {
+  color: white;
+}
+
+/* Bagian Lokasi */
+
+.lokasi {
+  padding: 40px 20px;
+  background-image: url(image/moroccan-flower.png);
+  background-repeat: repeat;
+}
+
+.lokasi-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lokasi-map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+.lokasi-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.lokasi-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.lokasi-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.lokasi-item i {
+  margin-right: 8px;
+  color: var(--primary-color);
+}
+
+/* Bagian Footer */
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer p:hover {
+  color: var(--hover-color);
+}
+
+/* =================== */
+/* Media Query untuk tampilan mobile */
+/* ==================== */

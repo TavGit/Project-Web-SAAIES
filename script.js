@@ -54,51 +54,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Handle nested dropdown (News > Kontak Kami)
-  const nestedLinks = document.querySelectorAll(".nav-link-sub");
-
-  nestedLinks.forEach((link) => {
-    const nestedDropdown = link.nextElementSibling;
-
-    if (
-      nestedDropdown &&
-      nestedDropdown.classList.contains("dropdown-kontak")
-    ) {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        // Tutup nested dropdown lain
-        document.querySelectorAll(".dropdown-kontak.show").forEach((d) => {
-          if (d !== nestedDropdown) d.classList.remove("show");
-        });
-        document.querySelectorAll(".nav-link-sub i.bi").forEach((icon) => {
-          icon.classList.remove("bi-caret-down-fill");
-          icon.classList.add("bi-caret-right-fill");
-        });
-
-        nestedDropdown.classList.toggle("show");
-        const icon = this.querySelector("i.bi");
-        if (icon) {
-          icon.classList.toggle(
-            "bi-caret-down-fill",
-            nestedDropdown.classList.contains("show")
-          );
-          icon.classList.toggle(
-            "bi-caret-right-fill",
-            !nestedDropdown.classList.contains("show")
-          );
-        }
-      });
-    }
-  });
-
   // Klik link biasa menutup menu
   navbar.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       if (window.innerWidth <= 768) {
         const isDropdown =
           link.nextElementSibling &&
-          (link.nextElementSibling.classList.contains("dropdown") ||
-            link.nextElementSibling.classList.contains("dropdown-kontak"));
+          link.nextElementSibling.classList.contains("dropdown");
         if (!isDropdown) {
           toggleMobileMenu();
         }
@@ -116,15 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Reset dropdowns
       document
-        .querySelectorAll(".dropdown.show, .dropdown-kontak.show")
+        .querySelectorAll(".dropdown.show")
         .forEach((d) => d.classList.remove("show"));
       document.querySelectorAll(".navbar ul li a i.bi").forEach((icon) => {
         icon.classList.remove("bi-caret-up-fill", "bi-caret-down-fill");
-        if (icon.parentElement.classList.contains("nav-link-sub")) {
-          icon.classList.add("bi-caret-right-fill");
-        } else {
-          icon.classList.add("bi-caret-down-fill");
-        }
       });
     }
   });
@@ -188,7 +145,7 @@ function type() {
 
 type(); // memulai animasi typing saat halaman dibuka
 
-// Logika Swiper Javascript
+// Logika Swiper Javascript untuk halaman home index.html
 const swiper = new Swiper(".fasilitas-swiper", {
   slidesPerView: 1,
   spaceBetween: 20,

@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #7c0c15;
+  --secondary-color: #003399;
+  --hover-color: #ff9900;
+}
+
+/* BAGIAN RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+/* Bagian Banner  */
+
+.banner {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.banner .swiper {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.banner .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Bagian Visi dan Misi */
+
+.visi-misi {
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.visi-misi .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.visi-misi .image-wrapper {
+  flex: 1 1 300px;
+}
+
+.visi-misi .image-wrapper img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.visi-misi .content {
+  flex: 2 1 600px;
+}
+
+.visi-misi h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.visi-misi h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.visi-misi p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.visi-misi ol {
+  padding-left: 20px;
+}
+
+.visi-misi li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* =================== */
+/* Media Query untuk tampilan mobile */
+/* ==================== */
+
+/* Media Query visi misi */
+@media (max-width: 768px) {
+  .visi-misi .container {
+    flex-direction: column;
+  }
+
+  .visi-misi .content {
+    flex: 1 1 100%;
+  }
+}

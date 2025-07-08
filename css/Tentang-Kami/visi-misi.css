@@ -97,6 +97,111 @@
   line-height: 1.6;
 }
 
+/* Bagian Footer */
+
+.footer-lengkap {
+  background-color: var(--primary-color);
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px 20px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 250px;
+}
+
+.footer-col.logo {
+  text-align: center;
+}
+
+.footer-col.logo img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-col.logo h3 {
+  font-size: 24px;
+  color: var(--hover-color);
+  margin-bottom: 4px;
+}
+
+.footer-col.logo p {
+  color: white;
+  font-weight: 400;
+}
+
+.footer-heading {
+  background-color: var(--hover-color);
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+}
+
+.footer-col li i {
+  margin-right: 8px;
+  font-size: 16px;
+  color: var(--hover-color);
+}
+
+.footer-col a {
+  color: #00aeef;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom .copyright p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: white;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom .copyright p:hover {
+  color: var(--hover-color);
+}
+
 /* =================== */
 /* Media Query untuk tampilan mobile */
 /* ==================== */
@@ -109,5 +214,23 @@
 
   .visi-misi .content {
     flex: 1 1 100%;
+  }
+}
+
+/* Media Query Footer */
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-col li {
+    justify-content: center;
   }
 }

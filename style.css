@@ -988,4 +988,18 @@ body.no-scroll {
 
 /* Media Query Info */
 
-/* Media Query footer */
+/* Media Query Footer */
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .credit {
+    width: 100%;
+  }
+  .footer .credit p {
+    justify-content: center;
+  }
+}

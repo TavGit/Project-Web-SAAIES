@@ -1,0 +1,395 @@
+:root {
+  --primary-color: #7c0c15;
+  --secondary-color: #003399;
+  --hover-color: #ff9900;
+}
+
+/* BAGIAN RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+/* Bagian Kontak Kami */
+
+.kontak-section {
+  padding: 80px 20px;
+  background-color: var(--light-gray); /* Latar belakang lebih netral */
+  font-family: "Open Sans", sans-serif; /* Konsisten dengan font body */
+  color: var(--text-color);
+}
+
+.kontak-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.kontak-header h2 {
+  font-size: 2.8em;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.kontak-header h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--hover-color);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.kontak-header p {
+  font-size: 1.1em;
+  color: var(--light-text);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.kontak-content-wrapper {
+  display: flex; /* Mengaktifkan layout 2 kolom */
+  flex-wrap: wrap; /* Izinkan wrap di layar kecil */
+  gap: 40px; /* Jarak antar kolom */
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start; /* Sejajarkan item ke atas */
+}
+
+/* Gaya untuk Peta dan Info Kontak */
+.kontak-info-map {
+  flex: 1 1 450px; /* Ambil sebagian ruang, bisa menyusut/membesar, basis 450px */
+  display: flex;
+  flex-direction: column; /* Peta di atas info */
+  gap: 30px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.kontak-map iframe {
+  width: 100%;
+  height: 350px; /* Tinggi peta disesuaikan */
+  border-radius: 8px; /* Sudut membulat untuk peta */
+  overflow: hidden; /* Pastikan sudut peta rapi */
+}
+
+.kontak-details h3 {
+  color: var(--primary-color);
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  font-family: "Roboto Slab", serif;
+}
+
+.kontak-details p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: var(--text-color);
+  display: flex; /* Untuk menata ikon dan teks */
+  align-items: center;
+}
+
+.kontak-details i {
+  margin-right: 10px;
+  color: var(--hover-color); /* Warna ikon yang menonjol */
+  font-size: 1.2em;
+}
+
+.kontak-details a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.kontak-details a:hover {
+  color: var(--hover-color);
+}
+
+/* Gaya untuk Formulir Kontak */
+.kontak-form-wrapper {
+  flex: 1 1 450px; /* Ambil sebagian ruang, bisa menyusut/membesar, basis 450px */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.kontak-form-wrapper h3 {
+  color: var(--primary-color);
+  font-size: 2em;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.kontak-form .form-group {
+  margin-bottom: 20px;
+}
+
+.kontak-form label {
+  display: block; /* Agar label di atas input */
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 0.95em;
+}
+
+.kontak-form input[type="text"],
+.kontak-form input[type="email"],
+.kontak-form input[type="tel"],
+.kontak-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  font-size: 1em;
+  color: white;
+  background-color: var(--hover-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kontak-form input:focus,
+.kontak-form textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary-color); /* Bayangan fokus lembut */
+  outline: none;
+}
+
+.kontak-form textarea {
+  resize: vertical; /* Hanya izinkan resize vertikal */
+  min-height: 100px;
+}
+
+.submit-button {
+  display: block; /* Agar tombol memenuhi lebar penuh */
+  width: 100%;
+  padding: 15px 25px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Bagian Footer */
+
+.footer-lengkap {
+  background-color: var(--primary-color);
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px 20px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 250px;
+}
+
+.footer-col.logo {
+  text-align: center;
+}
+
+.footer-col.logo img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-col.logo h3 {
+  font-size: 24px;
+  color: var(--hover-color);
+  margin-bottom: 4px;
+}
+
+.footer-col.logo p {
+  color: white;
+  font-weight: 400;
+}
+
+.footer-heading {
+  background-color: var(--hover-color);
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+}
+
+.footer-col li i {
+  margin-right: 8px;
+  font-size: 16px;
+  color: var(--hover-color);
+}
+
+.footer-col a {
+  color: #00aeef;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom .copyright p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: white;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom .copyright p:hover {
+  color: var(--hover-color);
+}
+
+/* =================== */
+/* Media Query untuk tampilan mobile */
+/* ==================== */
+
+/* Media Query kontak */
+
+@media (max-width: 992px) {
+  .kontak-section {
+    padding: 60px 15px;
+  }
+  .kontak-header h2 {
+    font-size: 2.2em;
+  }
+  .kontak-header p {
+    font-size: 1em;
+  }
+  .kontak-content-wrapper {
+    flex-direction: column; /* Kolom ditumpuk di layar sedang */
+    gap: 30px;
+  }
+  .kontak-info-map,
+  .kontak-form-wrapper {
+    flex: 1 1 100%; /* Ambil lebar penuh */
+    max-width: 600px; /* Batasi lebar untuk tampilan lebih baik */
+    margin: 0 auto; /* Tengah di layar sedang */
+  }
+  .kontak-details h3 {
+    font-size: 1.6em;
+  }
+  .kontak-form-wrapper h3 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .kontak-section {
+    padding: 40px 10px;
+  }
+  .kontak-header h2 {
+    font-size: 1.8em;
+  }
+  .kontak-details h3 {
+    font-size: 1.4em;
+  }
+  .kontak-details p {
+    font-size: 0.9em;
+  }
+  .kontak-form-wrapper h3 {
+    font-size: 1.6em;
+  }
+  .submit-button {
+    font-size: 1em;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kontak-section {
+    padding: 30px 5px;
+  }
+  .kontak-header h2 {
+    font-size: 1.6em;
+  }
+  .kontak-header p {
+    font-size: 0.9em;
+  }
+  .kontak-details p {
+    font-size: 0.85em;
+  }
+  .kontak-details i {
+    font-size: 1em;
+  }
+  .kontak-form label {
+    font-size: 0.9em;
+  }
+  .kontak-form input,
+  .kontak-form textarea {
+    padding: 10px 12px;
+    font-size: 0.95em;
+  }
+}
+
+/* Media Query Footer */
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-col li {
+    justify-content: center;
+  }
+}

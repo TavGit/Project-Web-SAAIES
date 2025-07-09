@@ -1,0 +1,410 @@
+:root {
+  --primary-color: #7c0c15;
+  --secondary-color: #003399;
+  --hover-color: #ff9900;
+}
+
+/* BAGIAN RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+/* Bagian Segera Daftar */
+
+.segera-daftar {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+}
+
+.segera-daftar-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.segera-daftar-item h2 {
+  font-family: "Roboto Slab";
+  font-weight: 600;
+  color: white;
+  flex-shrink: 1;
+  margin: 0;
+}
+
+.segera-daftar .btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+}
+
+.segera-daftar .btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.segera-daftar .btn:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.segera-daftar .btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.segera-daftar .btn:active {
+  transform: scale(0.9);
+}
+
+.segera-daftar .btn a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.segera-daftar .btn:hover a {
+  color: white;
+}
+
+/* Bagian Cara Daftar PPDB*/
+
+.cara-daftar-ppdb {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.cara-daftar-ppdb .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cara-daftar-ppdb .ppdb-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cara-daftar-ppdb .ppdb-header h2 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.cara-daftar-ppdb .ppdb-header .header-image {
+  margin: 20px 0 30px;
+}
+
+.cara-daftar-ppdb .ppdb-header .header-image img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cara-daftar-ppdb .ppdb-header h3 {
+  font-size: 1.8em;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.cara-daftar-ppdb .ppdb-header p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cara-daftar-ppdb .ppdb-flow-image {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cara-daftar-ppdb .ppdb-flow-image img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cara-daftar-ppdb .ppdb-instructions {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.cara-daftar-ppdb .ppdb-instructions h4 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cara-daftar-ppdb .ppdb-instructions ol {
+  list-style-type: decimal;
+  padding-left: 25px;
+}
+
+.cara-daftar-ppdb .ppdb-instructions ol li {
+  font-size: 1.05em;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.cara-daftar-ppdb .ppdb-instructions ol li:last-child {
+  margin-bottom: 0;
+}
+
+/* Bagian Footer */
+
+.footer-lengkap {
+  background-color: var(--primary-color);
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px 20px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 250px;
+}
+
+.footer-col.logo {
+  text-align: center;
+}
+
+.footer-col.logo img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-col.logo h3 {
+  font-size: 24px;
+  color: var(--hover-color);
+  margin-bottom: 4px;
+}
+
+.footer-col.logo p {
+  color: white;
+  font-weight: 400;
+}
+
+.footer-heading {
+  background-color: var(--hover-color);
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+}
+
+.footer-col li i {
+  margin-right: 8px;
+  font-size: 16px;
+  color: var(--hover-color);
+}
+
+.footer-col a {
+  color: #00aeef;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom .copyright p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: white;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom .copyright p:hover {
+  color: var(--hover-color);
+}
+
+/* =================== */
+/* Media Query untuk tampilan mobile */
+/* ==================== */
+
+/* Media Query Segera Daftar */
+
+@media (max-width: 768px) {
+  .segera-daftar-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .segera-daftar-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .segera-daftar .btn {
+    padding: 1em 1.8em;
+  }
+
+  .segera-daftar .btn a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .segera-daftar {
+    padding: 30px 0;
+  }
+
+  .segera-daftar-item h2 {
+    font-size: 1.5em;
+  }
+
+  .segera-daftar .btn {
+    padding: 0.8em 1.5em;
+  }
+
+  .segera-daftar .btn a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .segera-daftar-item h2 {
+    font-size: 1.3em;
+  }
+
+  .segera-daftar .btn a {
+    font-size: 14px;
+  }
+}
+
+/* Media Query Cara Daftar PPDB */
+
+@media (max-width: 768px) {
+  .cara-daftar-ppdb {
+    padding: 40px 0;
+  }
+  .cara-daftar-ppdb .ppdb-header h2 {
+    font-size: 2em;
+  }
+  .cara-daftar-ppdb .ppdb-header h3 {
+    font-size: 1.5em;
+  }
+  .cara-daftar-ppdb .ppdb-header p {
+    font-size: 1em;
+  }
+  .cara-daftar-ppdb .ppdb-instructions {
+    padding: 20px;
+  }
+  .cara-daftar-ppdb .ppdb-instructions h4 {
+    font-size: 1.3em;
+  }
+  .cara-daftar-ppdb .ppdb-instructions ol li {
+    font-size: 0.95em;
+  }
+  .cara-daftar-ppdb .ppdb-register-cta h3 {
+    font-size: 1.6em;
+  }
+  .cara-daftar-ppdb .ppdb-register-cta .btn-pendaftaran {
+    font-size: 1em;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cara-daftar-ppdb .container {
+    padding: 0 15px;
+  }
+  .cara-daftar-ppdb .ppdb-header h2 {
+    font-size: 1.8em;
+  }
+}
+
+/* Media Query Footer */
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-col li {
+    justify-content: center;
+  }
+}

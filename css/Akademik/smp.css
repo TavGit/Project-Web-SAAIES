@@ -1,0 +1,739 @@
+:root {
+  --primary-color: #7c0c15;
+  --secondary-color: #003399;
+  --hover-color: #ff9900;
+}
+
+/* BAGIAN RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+/* Bagian SMP  */
+
+.smp-hero {
+  width: 100%;
+  height: 400px;
+  background-image: url("/image/foto\ sekolahan.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.smp-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 2, 128, 0.6);
+}
+
+.smp-hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.smp-hero-content h1 {
+  font-family: "Noto Naskh Arabic";
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  direction: rtl;
+}
+
+.smp-hero-content p {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.8em;
+  color: #ffff00;
+  font-weight: bold;
+}
+
+/* Bagian Banner  */
+
+.banner {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.banner .swiper {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.banner .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Bagian VISI MISI SMP*/
+
+.visi-misi {
+  padding: 40px 20px;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.visi-misi .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.visi-misi .image-wrapper {
+  flex: 1 1 300px;
+}
+
+.visi-misi .image-wrapper img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.visi-misi .content {
+  flex: 2 1 600px;
+}
+
+.visi-misi h4 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+}
+
+.visi-misi p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.visi-misi ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+.visi-misi li {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  gap: 15px;
+}
+
+/* Bagian Tujuan SMP */
+
+.tujuan-smp {
+  background-color: var(--secondary-color);
+  padding: 60px 20px;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.tujuan-smp .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tujuan-smp h2 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+  color: #fff;
+}
+
+.tujuan-smp p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+/* Bagian Fasilitas */
+
+.fasilitas {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.fasilitas .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fasilitas .container h2 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.fasilitas .image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.fasilitas .image-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bagian Berita dan Kegiatan */
+
+.berita-kegiatan-smp {
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+}
+
+.berita-kegiatan-smp-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.berita-kegiatan-smp-item h2 {
+  font-family: "Noto Naskh Arabic", sans-serif;
+  font-size: 40px;
+  padding: 10px;
+  color: white;
+}
+
+.berita-kegiatan-smp-item h3 {
+  font-family: "Roboto Slab";
+  font-size: 30px;
+  color: #f1d60e;
+}
+
+/* Bagian Fasilitas */
+
+.foto-kegiatan {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--primary-color);
+}
+
+.foto-kegiatan .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.foto-kegiatan .image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.foto-kegiatan .image-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bagian Segera Daftar */
+
+.segera-daftar-smp {
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+}
+
+.segera-daftar-smp-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.segera-daftar-smp-item h2 {
+  font-family: "Roboto Slab";
+  font-weight: 600;
+  color: white;
+  flex-shrink: 1;
+  margin: 0;
+}
+
+.segera-daftar-smp .btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+}
+
+.segera-daftar-smp .btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.segera-daftar-smp .btn:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.segera-daftar-smp .btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.segera-daftar-smp .btn:active {
+  transform: scale(0.9);
+}
+
+.segera-daftar-smp .btn a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.segera-daftar-smp .btn:hover a {
+  color: white;
+}
+
+/* Bagian Hover Foto */
+
+.hover-foto-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.hover-foto-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.hover-foto-content {
+  flex: 1 1 45%;
+  min-width: 300px;
+  color: #222;
+}
+
+.hover-foto-content h2 {
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hover-foto-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.hover-foto-details-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hover-foto-details-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hover-foto-details-btn i {
+  font-size: 1.1em;
+}
+
+.hover-foto-nav-arrows {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.hover-foto-nav-arrows i {
+  font-size: 1.8em;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.hover-foto-nav-arrows i:hover {
+  color: #888;
+}
+
+.hover-foto-image-wrapper {
+  flex: 1 1 50%;
+  min-width: 320px;
+  text-align: right;
+}
+
+.hover-foto-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Bagian Lokasi */
+
+.lokasi-smp {
+  padding: 40px 20px;
+  background-image: url(/image/moroccan-flower.png);
+  background-repeat: repeat;
+}
+
+.lokasi-smp-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lokasi-smp-map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+.lokasi-smp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.lokasi-smp-item h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.lokasi-smp-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.lokasi-smp-item i {
+  margin-right: 8px;
+  color: var(--secondary-color);
+}
+
+/* Bagian Footer */
+
+.footer-smp {
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+}
+
+.footer-smp .credit p {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-smp .credit p:hover {
+  color: var(--hover-color);
+}
+
+/* =================== */
+/* Media Query untuk tampilan mobile */
+/* ==================== */
+
+/* Media Query SMP */
+
+@media (max-width: 768px) {
+  .smp-hero {
+    height: 300px;
+  }
+
+  .smp-hero-content h1 {
+    font-size: 2.5em;
+  }
+
+  .smp-hero-content p {
+    font-size: 1.2em;
+  }
+}
+
+/* Media Query visi misi */
+
+@media (max-width: 768px) {
+  .visi-misi .container {
+    flex-direction: column;
+  }
+
+  .visi-misi .content {
+    flex: 1 1 100%;
+  }
+}
+
+/* Media Query Tujuan SMP */
+
+@media (max-width: 768px) {
+  .tujuan-smp h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .tujuan-smp li {
+    font-size: 1em;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .tujuan-smp {
+    padding: 40px 15px;
+  }
+
+  .tujuan-smp h2 {
+    font-size: 1.5em;
+  }
+  .tujuan-smp li {
+    font-size: 0.95em;
+  }
+}
+
+/* Media Query Fasilitas */
+
+@media (max-width: 768px) {
+  .fasilitas h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .fasilitas .image-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .fasilitas .image-gallery img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fasilitas {
+    padding: 40px 0;
+  }
+
+  .fasilitas h2 {
+    font-size: 1.5em;
+    padding: 0 15px;
+  }
+
+  .fasilitas .image-gallery {
+    display: flex;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: mandatory;
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .fasilitas .image-gallery img {
+    flex-shrink: 0;
+    width: calc(100% - 30px);
+    height: 200%;
+    object-fit: cover;
+    scroll-snap-align: start;
+  }
+}
+
+/* Media Query Segera Daftar */
+
+@media (max-width: 768px) {
+  .segera-daftar-smp-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .segera-daftar-smp-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .segera-daftar-smp .btn {
+    padding: 1em 1.8em;
+  }
+
+  .segera-daftar-smp .btn a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .segera-daftar-smp {
+    padding: 30px 0;
+  }
+
+  .segera-daftar-smp-item h2 {
+    font-size: 1.5em;
+  }
+
+  .segera-daftar-smp .btn {
+    padding: 0.8em 1.5em;
+  }
+
+  .segera-daftar-smp .btn a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .segera-daftar-smp-item h2 {
+    font-size: 1.3em;
+  }
+
+  .segera-daftar-smp .btn a {
+    font-size: 14px;
+  }
+}
+
+/* Media Query Hover Foto */
+
+@media (max-width: 992px) {
+  .hover-foto-content h2 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .hover-foto-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hover-foto-content,
+  .hover-foto-image-wrapper {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+
+  .hover-foto-content h2 {
+    font-size: 2.5em;
+  }
+
+  .hover-foto-image-wrapper {
+    text-align: center;
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .hover-foto-nav-arrows {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hover-foto-section {
+    padding: 40px 15px;
+  }
+
+  .hover-foto-content h2 {
+    font-size: 2em;
+  }
+
+  .hover-foto-content p {
+    font-size: 1em;
+  }
+
+  .hover-foto-details-btn {
+    padding: 10px 20px;
+    font-size: 0.95em;
+  }
+
+  .hover-foto-nav-arrows {
+    margin-top: 30px;
+  }
+
+  .hover-foto-nav-arrows i {
+    font-size: 1.5em;
+  }
+}
+
+/* Media Query Footer */
+
+@media (max-width: 768px) {
+  .footer-smp {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-smp .credit {
+    width: 100%;
+  }
+  .footer-smp .credit p {
+    justify-content: center;
+  }
+}

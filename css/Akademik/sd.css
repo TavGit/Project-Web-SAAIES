@@ -134,9 +134,11 @@
 }
 
 .visi-misi li {
+  display: flex;
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.6;
+  gap: 15px;
 }
 
 /* Bagian Tujuan SD */
@@ -195,7 +197,7 @@
   margin: 0 auto;
 }
 
-.fasilitas h2 {
+.fasilitas .container h2 {
   font-size: 2.2em;
   font-weight: 700;
   margin-bottom: 30px;
@@ -352,6 +354,100 @@
 
 .segera-daftar .btn:hover a {
   color: white;
+}
+
+/* Bagian Hover Foto */
+
+.hover-foto-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.hover-foto-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.hover-foto-content {
+  flex: 1 1 45%;
+  min-width: 300px;
+  color: #222;
+}
+
+.hover-foto-content h2 {
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hover-foto-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.hover-foto-details-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hover-foto-details-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hover-foto-details-btn i {
+  font-size: 1.1em;
+}
+
+.hover-foto-nav-arrows {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.hover-foto-nav-arrows i {
+  font-size: 1.8em;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.hover-foto-nav-arrows i:hover {
+  color: #888;
+}
+
+.hover-foto-image-wrapper {
+  flex: 1 1 50%;
+  min-width: 320px;
+  text-align: right;
+}
+
+.hover-foto-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Bagian Lokasi */
@@ -573,6 +669,68 @@
 
   .segera-daftar .btn a {
     font-size: 14px;
+  }
+}
+
+/* Media Query Hover Foto */
+
+@media (max-width: 992px) {
+  .hover-foto-content h2 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .hover-foto-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hover-foto-content,
+  .hover-foto-image-wrapper {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+
+  .hover-foto-content h2 {
+    font-size: 2.5em;
+  }
+
+  .hover-foto-image-wrapper {
+    text-align: center;
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .hover-foto-nav-arrows {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hover-foto-section {
+    padding: 40px 15px;
+  }
+
+  .hover-foto-content h2 {
+    font-size: 2em;
+  }
+
+  .hover-foto-content p {
+    font-size: 1em;
+  }
+
+  .hover-foto-details-btn {
+    padding: 10px 20px;
+    font-size: 0.95em;
+  }
+
+  .hover-foto-nav-arrows {
+    margin-top: 30px;
+  }
+
+  .hover-foto-nav-arrows i {
+    font-size: 1.5em;
   }
 }
 

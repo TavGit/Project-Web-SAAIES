@@ -218,6 +218,57 @@
 /* Media Query untuk tampilan mobile */
 /* ==================== */
 
+/* Media Query Segera Daftar */
+
+@media (max-width: 768px) {
+  .segera-daftar-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .segera-daftar-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .segera-daftar .btn {
+    padding: 1em 1.8em;
+  }
+
+  .segera-daftar .btn a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .segera-daftar {
+    padding: 30px 0;
+  }
+
+  .segera-daftar-item h2 {
+    font-size: 1.5em;
+  }
+
+  .segera-daftar .btn {
+    padding: 0.8em 1.5em;
+  }
+
+  .segera-daftar .btn a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .segera-daftar-item h2 {
+    font-size: 1.3em;
+  }
+
+  .segera-daftar .btn a {
+    font-size: 14px;
+  }
+}
+
 /* Media Query Footer */
 
 @media (max-width: 768px) {

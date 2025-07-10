@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      -Formulir Pendaftaran Awal Muka - Shallahuddin Al - Ayyubi Islamic
+      Elementary School (SAAIES)
+    </title>
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="/css/Pendaftaran/form-daftar.css" />
+    <!-- icon website -->
+    <link rel="icon" href="/image/ICON LOGO-02.png" />
+    <!-- Link CSS home -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- Fonts Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar  -->
+    <div class="main-nav-container">
+      <!-- Header logo dan Teks -->
+      <header class="header">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/image/ICON LOGO-01.png" alt="Logo SAAIES" />
+          </a>
+        </div>
+      </header>
+
+      <!-- Humburger Menu -->
+      <div class="menu-toggle">
+        <i class="bi bi-list" id="humburger-icon"></i>
+        <i class="bi bi-x-circle" id="close-icon"></i>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#about" class="nav-link"
+              >Tentang Kami <i class="bi bi-caret-down-fill"></i
+            ></a>
+            <ul class="dropdown">
+              <li>
+                <a href="/html/Tentang-Kami/sejarah.html#sejarah"
+                  >Sekilas Sejarah SAAIES</a
+                >
+              </li>
+              <li>
+                <a href="/html/Tentang-Kami/visi-misi.html#visimisi"
+                  >Visi dan Misi</a
+                >
+              </li>
+              <li>
+                <a href="/html/Tentang-Kami/value.html#value">SAAIES Values</a>
+              </li>
+              <li>
+                <a href="/html/Tentang-Kami/news.html#news">News</a>
+              </li>
+              <li>
+                <a href="/html/Tentang-Kami/kontak.html#kontak">Kontak Kami</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#akademik" class="nav-link"
+              >Akademik <i class="bi bi-caret-down-fill"></i
+            ></a>
+            <ul class="dropdown">
+              <li><a href="/html/Akademik/sd.html#sd">SD SAAIES Bekasi</a></li>
+              <li>
+                <a href="/html/Akademik/smp.html#smp">SMP SAAIES Bekasi</a>
+              </li>
+              <li>
+                <a href="/html/Akademik/sma.html#sma">SMA SAAIES Bekasi</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#pendaftaran" class="nav-link"
+              >Pendaftaran <i class="bi bi-caret-down-fill"></i
+            ></a>
+            <ul class="dropdown">
+              <li>
+                <a href="cara-daftar.html#caradaftar">Cara Mendaftar</a>
+              </li>
+              <li>
+                <a href="#formdaftar">Form Pendaftaran</a>
+              </li>
+              <li><a href="brosur.html#brosur">Brosur</a></li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="/html/Hasil-Tes-PPDB/hasil-tes.html#hasiltes"
+              class="nav-link"
+              >Hasil Tes PPDB</a
+            >
+          </li>
+          <li>
+            <a href="#keagamaan" class="nav-link"
+              >Keagamaan <i class="bi bi-caret-down-fill"></i
+            ></a>
+            <ul class="dropdown">
+              <li>
+                <a href="/html/Keagamaan/program.html#program"
+                  >Program Keagamaan</a
+                >
+              </li>
+              <li>
+                <a href="/html/Keagamaan/artikel.html#artikel">Artikel</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="/html/Kemanusiaan/kemanusiaan.html#kemanusiaan"
+              class="nav-link"
+              >Kemanusiaan</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Formulir Pendaftaran -->
+    <section id="form-daftar" class="form-daftar-listing-section">
+      <div class="form-daftar-container">
+        <div class="form-daftar-section-header" id="initial-header">
+          <h2>FORMULIR PENDAFTARAN AWAL</h2>
+          <h3>SD - SMP - SMA - FULLDAY & BOARDING</h3>
+          <p>
+            Pilih tahun ajaran yang sesuai untuk mendaftarkan calon peserta
+            didik baru Anda.
+          </p>
+        </div>
+
+        <div class="form-cards-wrapper" id="form-selection-cards">
+          <div class="card form-card-tahun-ajaran">
+            <div class="card-content">
+              <h4>FORMULIR TAHUN AJARAN</h4>
+              <div class="year-highlight">
+                <h2>2025 - 2026</h2>
+                <p>Pendaftaran Tahun Ajaran Reguler</p>
+              </div>
+              <a href="#" class="btn-daftar-sekarang" id="btn-reguler">
+                <i class="bi bi-pencil-square"></i>
+                <span>Daftar Sekarang</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="card form-card-pindahan">
+            <div class="card-content">
+              <h4>*KHUSUS SISWA PINDAHAN</h4>
+              <p>
+                Mohon mengkonfirmasi ketersediaan kuota sebelum melakukan
+                pendaftaran.
+              </p>
+              <a
+                href="#"
+                class="btn-daftar-sekarang btn-pindahan"
+                id="btn-pindahan"
+              >
+                <i class="bi bi-pencil-square"></i>
+                <span>Konfirmasi & Daftar</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulir Pendaftaran Tahun Ajaran -->
+        <div id="form-reguler" class="registration-form-container hidden">
+          <div class="form-header">
+            <h2>Formulir Pendaftaran Siswa Baru - Tahun Ajaran 2025-2026</h2>
+            <p>Silakan isi data diri calon peserta didik.</p>
+          </div>
+          <form class="registration-form">
+            <h3>Data Calon Peserta Didik</h3>
+            <div class="form-group">
+              <label for="nama-lengkap-reguler">Nama Lengkap:</label>
+              <input
+                type="text"
+                id="nama-lengkap-reguler"
+                name="nama_lengkap"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="tempat-lahir-reguler">Tempat Lahir:</label>
+              <input
+                type="text"
+                id="tempat-lahir-reguler"
+                name="tempat_lahir"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="tanggal-lahir-reguler">Tanggal Lahir:</label>
+              <input
+                type="date"
+                id="tanggal-lahir-reguler"
+                name="tanggal_lahir"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="jenis-kelamin-reguler">Jenis Kelamin:</label>
+              <select id="jenis-kelamin-reguler" name="jenis_kelamin" required>
+                <option value="">Pilih</option>
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="jenjang-reguler">Jenjang Pendaftaran:</label>
+              <select id="jenjang-reguler" name="jenjang" required>
+                <option value="">Pilih Jenjang</option>
+                <option value="sd">SD</option>
+                <option value="smp">SMP</option>
+                <option value="sma">SMA</option>
+                <option value="fullday">Full Day</option>
+                <option value="boarding">Boarding</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="alamat-reguler">Alamat Lengkap:</label>
+              <textarea
+                id="alamat-reguler"
+                name="alamat"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <h3>Data Orang Tua/Wali</h3>
+            <div class="form-group">
+              <label for="nama-ayah-reguler">Nama Ayah:</label>
+              <input
+                type="text"
+                id="nama-ayah-reguler"
+                name="nama_ayah"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="no-hp-ayah-reguler">No. HP Ayah:</label>
+              <input
+                type="tel"
+                id="no-hp-ayah-reguler"
+                name="no_hp_ayah"
+                pattern="[0-9]{10,15}"
+                placeholder="Contoh: 081234567890"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="nama-ibu-reguler">Nama Ibu:</label>
+              <input
+                type="text"
+                id="nama-ibu-reguler"
+                name="nama_ibu"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="no-hp-ibu-reguler">No. HP Ibu:</label>
+              <input
+                type="tel"
+                id="no-hp-ibu-reguler"
+                name="no_hp_ibu"
+                pattern="[0-9]{10,15}"
+                placeholder="Contoh: 081234567890"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email-reguler">Email:</label>
+              <input type="email" id="email-reguler" name="email" required />
+            </div>
+            <button class="btn-back" id="back-to-selection-reguler">
+              <i class="bi bi-arrow-left"></i> Kembali
+            </button>
+            <button type="submit" class="submit-btn">Kirim Pendaftaran</button>
+          </form>
+        </div>
+
+        <!-- Formulir Pendaftaran Khusus Pindahan -->
+        <div id="form-pindahan" class="registration-form-container hidden">
+          <div class="form-header">
+            <h2>Formulir Pendaftaran Siswa Pindahan</h2>
+            <p>
+              Harap lengkapi data untuk siswa pindahan. Mohon konfirmasi
+              ketersediaan kuota sebelum mengisi formulir ini.
+            </p>
+          </div>
+          <form class="registration-form">
+            <h3>Data Calon Peserta Didik (Pindahan)</h3>
+            <div class="form-group">
+              <label for="nama-lengkap-pindahan">Nama Lengkap:</label>
+              <input
+                type="text"
+                id="nama-lengkap-pindahan"
+                name="nama_lengkap_pindahan"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="asal-sekolah-pindahan"
+                >Asal Sekolah Sebelumnya:</label
+              >
+              <input
+                type="text"
+                id="asal-sekolah-pindahan"
+                name="asal_sekolah_pindahan"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="kelas-terakhir-pindahan"
+                >Kelas Terakhir di Sekolah Asal:</label
+              >
+              <input
+                type="text"
+                id="kelas-terakhir-pindahan"
+                name="kelas_terakhir_pindahan"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="tanggal-lahir-pindahan">Tanggal Lahir:</label>
+              <input
+                type="date"
+                id="tanggal-lahir-pindahan"
+                name="tanggal_lahir_pindahan"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="jenis-kelamin-pindahan">Jenis Kelamin:</label>
+              <select
+                id="jenis-kelamin-pindahan"
+                name="jenis_kelamin_pindahan"
+                required
+              >
+                <option value="">Pilih</option>
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="jenjang-pindahan">Jenjang Pendaftaran:</label>
+              <select id="jenjang-pindahan" name="jenjang_pindahan" required>
+                <option value="">Pilih Jenjang</option>
+                <option value="sd">SD</option>
+                <option value="smp">SMP</option>
+                <option value="sma">SMA</option>
+                <option value="fullday">Full Day</option>
+                <option value="boarding">Boarding</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="alasan-pindahan">Alasan Pindah:</label>
+              <textarea
+                id="alasan-pindahan"
+                name="alasan_pindahan"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="dokumen-pindahan"
+                >Upload Dokumen Pendukung (misal: Rapor terakhir, Surat
+                Keterangan Pindah):</label
+              >
+              <input
+                type="file"
+                id="dokumen-pindahan"
+                name="dokumen_pindahan"
+                accept=".pdf,.doc,.docx,.jpg,.png"
+                multiple
+              />
+            </div>
+            <h3>Data Orang Tua/Wali</h3>
+            <div class="form-group">
+              <label for="nama-ayah-pindahan">Nama Ayah:</label>
+              <input
+                type="text"
+                id="nama-ayah-pindahan"
+                name="nama_ayah_pindahan"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="no-hp-ayah-pindahan">No. HP Ayah:</label>
+              <input
+                type="tel"
+                id="no-hp-ayah-pindahan"
+                name="no_hp_ayah_pindahan"
+                pattern="[0-9]{10,15}"
+                placeholder="Contoh: 081234567890"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="nama-ibu-pindahan">Nama Ibu:</label>
+              <input
+                type="text"
+                id="nama-ibu-pindahan"
+                name="nama_ibu_pindahan"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="no-hp-ibu-pindahan">No. HP Ibu:</label>
+              <input
+                type="tel"
+                id="no-hp-ibu-pindahan"
+                name="no_hp_ibu_pindahan"
+                pattern="[0-9]{10,15}"
+                placeholder="Contoh: 081234567890"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email-pindahan">Email:</label>
+              <input
+                type="email"
+                id="email-pindahan"
+                name="email_pindahan"
+                required
+              />
+            </div>
+            <button class="btn-back" id="back-to-selection-pindahan">
+              <i class="bi bi-arrow-left"></i> Kembali
+            </button>
+            <button type="submit" class="submit-btn">
+              Kirim Pendaftaran Pindahan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-lengkap">
+      <div class="footer-container">
+        <div class="footer-col logo">
+          <img src="/image/ICON_LOGO-03.png" alt="SAAIES ICON" />
+          <h3>SAAIES</h3>
+          <p>
+            Berkarakter Islami, beriman dan bertaqwa serta berilmu pengetahuan
+            dan teknologi.
+          </p>
+        </div>
+
+        <!-- SD -->
+        <div class="footer-col">
+          <div class="footer-heading">SD SAAIES</div>
+          <ul>
+            <li>
+              <i id="icon" class="bi bi-geo-alt-fill"></i>Perumahan Raudhatul
+              Jannah Residence Kebalen, Kec. Babelan, Kab. Bekasi., Bekasi 17610
+            </li>
+            <li>
+              <i id="icon" class="bi bi-telephone-plus-fill"></i>0888-2-88-2024
+            </li>
+            <li>
+              <i id="icon" class="bi bi-envelope-at-fill"></i>example@gmail.com
+            </li>
+            <li>
+              <i class="bi bi-globe"></i
+              ><a href="https://saaisc.com/">https://saaisc.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SMP -->
+        <div class="footer-col">
+          <div class="footer-heading">SMP SAAIES</div>
+          <ul>
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>Perumahan Raudhatul Jannah
+              Residence Kebalen, Kec. Babelan, Kab. Bekasi., Bekasi 17610
+            </li>
+            <li><i class="bi bi-telephone-plus-fill"></i>0888-2-88-2024</li>
+            <li><i class="bi bi-envelope-at-fill"></i>example@gmail.com</li>
+            <li>
+              <i class="bi bi-globe"></i
+              ><a href="https://saaisc.com/">https://saaisc.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SMA -->
+        <div class="footer-col">
+          <div class="footer-heading">SMA SAAIES</div>
+          <ul>
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>Perumahan Raudhatul Jannah
+              Residence Kebalen, Kec. Babelan, Kab. Bekasi., Bekasi 17610
+            </li>
+            <li><i class="bi bi-telephone-plus-fill"></i>0888-2-88-2024</li>
+            <li><i class="bi bi-envelope-at-fill"></i>example@gmail.com</li>
+            <li>
+              <i class="bi bi-globe"></i
+              ><a href="https://saaisc.com/">https://saaisc.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>
+              &copy; Shallahuddin Al - Ayyubi Islamic Elementary School 2025 |
+              All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- Link Javascript home -->
+<script src="/script.js"></script>
+
+<!-- Link Javascript Form Daftar -->
+<script src="/javascript/form-daftar.js"></script>

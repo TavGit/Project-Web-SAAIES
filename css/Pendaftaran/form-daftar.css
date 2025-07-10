@@ -128,11 +128,11 @@
 /* Styling khusus untuk Form Daftar Tahun Ajaran */
 
 .form-card-tahun-ajaran {
-  background-color: rgb(21, 174, 177);
+  background-color: var(--primary-color);
 }
 
 .form-card-tahun-ajaran:hover {
-  background-color: blueviolet;
+  background-color: var(--hover-color);
 }
 
 .form-card-tahun-ajaran .year-highlight {
@@ -163,7 +163,7 @@
 /* Styling khusus untuk Form Daftar Khusus Pindahan */
 
 .form-card-pindahan {
-  background-color: #dd7015;
+  background-color: var(--secondary-color);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -191,7 +191,7 @@
   justify-content: center;
   gap: 9px;
   text-decoration: none;
-  background-color: var(--hover-color);
+  background-color: var(--secondary-color);
   color: white;
   padding: 14px 28px;
   border-radius: 50px;

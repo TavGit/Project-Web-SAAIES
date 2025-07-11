@@ -33,6 +33,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- Link AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navigation Bar  -->
@@ -190,23 +192,6 @@
 
         <div class="unggulan-item">
           <div class="icon-wrapper">
-            <i class="bi bi-person-heart"></i>
-          </div>
-          <h2>Pendidik Berdedikasi & Kompeten</h2>
-          <p>
-            Tim pengajar profesional yang diseleksi ketat, berjiwa Islami, dan
-            berkomitmen mendampingi setiap siswa mencapai potensi terbaiknya
-            dengan cinta dan kesabaran.
-          </p>
-          <a
-            href="html/Kemanusiaan/kemanusiaan.html#kemanusiaan"
-            class="learn-more-btn"
-            >Kenali Guru Kami <i class="bi bi-arrow-right"></i
-          ></a>
-        </div>
-
-        <div class="unggulan-item">
-          <div class="icon-wrapper">
             <i class="bi bi-award-fill"></i>
           </div>
           <h2>Pengembangan Karakter Holistik</h2>
@@ -224,22 +209,16 @@
 
     <!-- Banner Formulir -->
     <section class="banner">
-      <a
-        href="https://www.emiisc.sch.id/formulir-pendaftaran-awal/"
-        target="_blank"
-      >
+      <a href="html/Pendaftaran/form-daftar.html#formdaftar">
         <img src="image/EMIISc-ITAF.jpeg" alt="banner" />
       </a>
 
-      <a
-        href="https://www.emiisc.sch.id/formulir-pendaftaran-awal/"
-        target="_blank"
-      >
+      <a href="html/Pendaftaran/form-daftar.html#formdaftar">
         <h1>-- SK KELULUSAN SD 2025 --</h1>
       </a>
     </section>
 
-    <!-- Info -->
+    <!-- Info Menu -->
     <section class="info-utama">
       <div class="info-menu">
         <div class="info-item">
@@ -293,7 +272,9 @@
       <div class="segera-daftar-item">
         <h2>Segera Daftarkan Putra Putri Anda! Kuota Terbatas!!</h2>
         <button class="btn">
-          <a href="#">Link Pendaftaran</a>
+          <a href="html/Pendaftaran/form-daftar.html#formdaftar"
+            >Link Pendaftaran</a
+          >
         </button>
       </div>
     </section>
@@ -335,10 +316,7 @@
 
     <!-- Banner berita dan kegiatan -->
     <section class="banner-news">
-      <a
-        href="https://www.emiisc.sch.id/formulir-pendaftaran-awal/"
-        target="_blank"
-      >
+      <a href="html/Pendaftaran/form-daftar.html#formdaftar">
         <img src="image/EMIISc-ITAF NEWS.jpeg" alt="banner" />
       </a>
     </section>
@@ -363,7 +341,11 @@
             <i class="bi bi-youtube"></i>
           </a>
         </div>
-        <a href="#" class="wa-btn">
+        <a
+          href="https://wa.me/628882882024?text="
+          target="_blank"
+          class="wa-btn"
+        >
           <i class="bi bi-whatsapp"></i> Info SAAIES
         </a>
       </div>
@@ -403,19 +385,19 @@
 
     <!-- Quick Menu -->
     <div class="quick-menu">
-      <a href="#brosur">
+      <a href="html/Pendaftaran/brosur.html#brosur">
         <i class="bi bi-book-fill"></i>
         <span>Brosur Flyer</span>
       </a>
-      <a href="#formdaftar">
+      <a href="html/Pendaftaran/form-daftar.html#formdaftar">
         <i class="bi bi-clipboard-check-fill"></i>
         <span>Pendaftaran</span>
       </a>
-      <a href="#hasiltes">
+      <a href="html/Hasil-Tes-PPDB/hasil-tes.html#hasiltes">
         <i class="bi bi-person-check-fill"></i>
         <span>Hasil Tes PPDB</span>
       </a>
-      <a href="#kontak">
+      <a href="html/Tentang-Kami/kontak.html#kontak">
         <i class="bi bi-whatsapp"></i>
         <span>Hubungi Kami</span>
       </a>
@@ -433,6 +415,15 @@
 
     <!-- Swiper Javascript -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      document.querySelectorAll("section").forEach((el) => {
+        el.setAttribute("data-aos", "fade-up");
+      });
+      AOS.init();
+    </script>
   </body>
 </html>
 

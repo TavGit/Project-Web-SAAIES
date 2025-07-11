@@ -401,7 +401,7 @@ body.no-scroll {
   font-size: 1.3rem;
 }
 
-/* Bagian Info */
+/* Bagian Info Menu*/
 
 .info-utama {
   background-color: var(--primary-color);
@@ -442,7 +442,7 @@ body.no-scroll {
   color: var(--hover-color);
 }
 
-/* Bagian Akreditasi */
+/* Bagian Info Akreditasi */
 
 .akreditasi {
   background-color: #fff;
@@ -824,12 +824,35 @@ body.no-scroll {
 /* ==================== */
 
 /* Media Query Navbar */
+
+/* Navbar Ukuran 1024 px */
+@media (max-width: 1024px) {
+  .navbar ul li a {
+    padding: 18px 22px;
+    font-size: 15.5px;
+  }
+  .navbar ul li ul.dropdown {
+    min-width: 200px;
+  }
+}
+
+/* Navbar Ukuran 992 px */
+@media (max-width: 992px) {
+  .navbar ul li a {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+  .navbar ul li ul.dropdown {
+    min-width: 180px;
+  }
+}
+
+/* Navbar Ukuran 768 px */
 @media (max-width: 768px) {
   .main-nav-container {
     justify-content: space-between;
   }
 
-  /* Tampilkan humburger/close icon */
   .menu-toggle {
     display: block;
     z-index: 1002;
@@ -838,7 +861,6 @@ body.no-scroll {
     right: 20px;
   }
 
-  /* Sembunyikan navbar desktop */
   .navbar {
     position: fixed;
     top: 0;
@@ -907,7 +929,6 @@ body.no-scroll {
     display: none;
   }
 
-  /* Gaya menu dropdown untuk tampilan mobile */
   .navbar ul li ul.dropdown {
     position: static;
     display: none;
@@ -937,9 +958,173 @@ body.no-scroll {
   }
 }
 
+/* Navbar Ukuran 576 px */
+@media (max-width: 576px) {
+  .logo img {
+    height: 70px;
+    width: 90px;
+  }
+
+  .menu-toggle {
+    top: 15px;
+    right: 15px;
+    font-size: 2.2rem;
+  }
+
+  .navbar {
+    width: 85%;
+    padding-top: 70px;
+    max-width: 280px;
+  }
+
+  .navbar ul li a {
+    padding: 12px 8px;
+    font-size: 16px;
+  }
+
+  .navbar ul li ul.dropdown li a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Navbar Ukuran 480 px */
+@media (max-width: 480px) {
+  .main-nav-container {
+    padding: 8px 8px;
+  }
+
+  .logo img {
+    height: 60px;
+    width: 80px;
+  }
+
+  .menu-toggle {
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    width: 90%;
+    padding-top: 60px;
+    max-width: 250px;
+  }
+
+  .navbar ul {
+    padding: 15px;
+  }
+
+  .navbar ul li a {
+    padding: 10px 5px;
+    font-size: 15px;
+  }
+
+  .navbar ul li ul.dropdown li a {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
 /* Media Query Landing Page */
 
+@media (max-width: 1024px) {
+  .background h1 {
+    font-size: 38px;
+    top: 28%;
+  }
+
+  .background h2 {
+    font-size: 38px;
+    top: 42%;
+  }
+
+  .background .animasi .animasi-text li {
+    font-size: 38px;
+    top: 58%;
+  }
+}
+
+@media (max-width: 992px) {
+  .background h1 {
+    font-size: 36px;
+    top: 28%;
+  }
+
+  .background h2 {
+    font-size: 36px;
+    top: 42%;
+  }
+
+  .background .animasi .animasi-text li {
+    font-size: 36px;
+    top: 58%;
+  }
+}
+
+@media (max-width: 768px) {
+  .background h1 {
+    font-size: 32px;
+    top: 30%;
+    padding: 0 15px;
+  }
+
+  .background h2 {
+    font-size: 32px;
+    top: 44%;
+    padding: 0 15px;
+  }
+
+  .background .animasi .animasi-text li {
+    font-size: 32px;
+    top: 60%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .background h1 {
+    font-size: 28px;
+    top: 32%;
+    padding: 0 10px;
+  }
+
+  .background h2 {
+    font-size: 28px;
+    top: 46%;
+    padding: 0 10px;
+  }
+
+  .background .animasi .animasi-text li {
+    font-size: 28px;
+    top: 62%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background h1 {
+    font-size: 24px;
+    top: 35%;
+    padding: 0 5px;
+  }
+
+  .background h2 {
+    font-size: 24px;
+    top: 49%;
+    padding: 0 5px;
+  }
+
+  .background .animasi .animasi-text li {
+    font-size: 24px;
+    top: 65%;
+    padding: 0 5px;
+    white-space: normal;
+  }
+}
+
 /* Media Query Poin Unggulan */
+
 @media (max-width: 992px) {
   .unggulan-item {
     width: calc(50% - 30px);
@@ -986,7 +1171,233 @@ body.no-scroll {
   }
 }
 
-/* Media Query Info */
+/* Media Query Banner Formulir */
+
+@media (max-width: 1024px) {
+  .banner a img {
+    width: 750px;
+    padding: 30px;
+  }
+
+  .banner h1 {
+    margin: 35px 300px 40px 300px;
+    padding: 18px 15px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner a img {
+    width: 650px;
+    padding: 25px;
+  }
+
+  .banner h1 {
+    margin: 30px 200px 35px 200px;
+    padding: 16px 12px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner a img {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  .banner h1 {
+    margin: 25px auto 30px auto;
+    max-width: 80%;
+    padding: 15px 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner a img {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .banner h1 {
+    margin: 20px auto 25px auto;
+    max-width: 90%;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner a img {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .banner h1 {
+    margin: 15px auto 20px auto;
+    max-width: 95%;
+    padding: 10px 5px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Media Query Info Akreditasi */
+
+@media (max-width: 1024px) {
+  .akreditasi {
+    padding: 35px 15px;
+  }
+
+  .akreditasi-container {
+    max-width: 960px;
+  }
+
+  .akreditasi-text {
+    flex: 1 1 300px;
+    margin-right: 30px;
+  }
+
+  .akreditasi h2 {
+    font-size: 1.8em;
+  }
+
+  .akreditasi h3 {
+    font-size: 20px;
+  }
+
+  .akreditasi h4 {
+    font-size: 17px;
+  }
+
+  .akreditasi p {
+    font-size: 15px;
+  }
+
+  .akreditasi-image {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 992px) {
+  .akreditasi-container {
+    max-width: 900px;
+    justify-content: center;
+  }
+
+  .akreditasi-text {
+    flex: 1 1 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .akreditasi-image {
+    flex: 1 1 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .akreditasi h2 {
+    font-size: 1.7em;
+  }
+
+  .akreditasi h3 {
+    font-size: 20px;
+  }
+
+  .akreditasi h4 {
+    font-size: 16px;
+  }
+
+  .akreditasi p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .akreditasi {
+    padding: 30px 10px;
+  }
+
+  .akreditasi h2 {
+    font-size: 1.6em;
+  }
+
+  .akreditasi h3 {
+    font-size: 18px;
+  }
+
+  .akreditasi h4 {
+    font-size: 15px;
+  }
+
+  .akreditasi p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .akreditasi-text {
+    margin-bottom: 15px;
+  }
+
+  .akreditasi-image {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .akreditasi {
+    padding: 25px 10px;
+  }
+
+  .akreditasi h2 {
+    font-size: 1.4em;
+  }
+
+  .akreditasi h3 {
+    font-size: 17px;
+  }
+
+  .akreditasi h4 {
+    font-size: 14px;
+  }
+
+  .akreditasi p {
+    font-size: 13.5px;
+  }
+
+  .akreditasi-image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .akreditasi {
+    padding: 20px 8px;
+  }
+
+  .akreditasi h2 {
+    font-size: 1.3em;
+  }
+
+  .akreditasi h3 {
+    font-size: 16px;
+  }
+
+  .akreditasi h4 {
+    font-size: 13px;
+  }
+
+  .akreditasi p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .akreditasi-image {
+    max-width: 280px;
+  }
+}
 
 /* Media Query Segera Daftar */
 
@@ -1036,6 +1447,125 @@ body.no-scroll {
 
   .segera-daftar .btn a {
     font-size: 14px;
+  }
+}
+
+/* Media Query Banner Berita dan Kegiatan */
+
+@media (max-width: 1024px) {
+  .banner-news a img {
+    width: 700px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner-news a img {
+    width: 600px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-news a img {
+    width: 90%;
+    max-width: 500px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-news a img {
+    width: 95%;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-news a img {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+/* Media Query Quick Menu */
+
+@media (max-width: 1024px) {
+  .quick-menu {
+    gap: 30px;
+    padding: 8px 0;
+  }
+
+  .quick-menu a {
+    font-size: 17px;
+  }
+
+  .quick-menu a i {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .quick-menu {
+    gap: 25px;
+    padding: 8px 0;
+  }
+
+  .quick-menu a {
+    font-size: 16px;
+  }
+
+  .quick-menu a i {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quick-menu {
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+  .quick-menu a {
+    font-size: 14px;
+  }
+
+  .quick-menu a i {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .quick-menu {
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+  .quick-menu a {
+    font-size: 13px;
+  }
+
+  .quick-menu a i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-menu {
+    gap: 10px;
+    padding: 6px 5px;
+    justify-content: space-around;
+  }
+
+  .quick-menu a {
+    font-size: 11px;
+    white-space: nowrap;
+    min-width: 70px;
+  }
+
+  .quick-menu a i {
+    font-size: 18px;
+    margin-bottom: 3px;
   }
 }
 

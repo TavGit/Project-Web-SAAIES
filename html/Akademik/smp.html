@@ -36,6 +36,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <!-- Link AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navigation Bar  -->
@@ -328,7 +330,9 @@
       <div class="segera-daftar-smp-item">
         <h2>Segera Daftarkan Putra Putri Anda! Kuota Terbatas!!</h2>
         <button class="btn">
-          <a href="#">Link Pendaftaran</a>
+          <a href="/html/Pendaftaran/form-daftar.html#formdaftar"
+            >Link Pendaftaran</a
+          >
         </button>
       </div>
     </section>
@@ -407,6 +411,15 @@
 
     <!-- Swiper Javascript -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      document.querySelectorAll("section").forEach((el) => {
+        el.setAttribute("data-aos", "fade-up");
+      });
+      AOS.init();
+    </script>
   </body>
 </html>
 

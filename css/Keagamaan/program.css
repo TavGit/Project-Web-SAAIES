@@ -23,36 +23,82 @@
 /* Bagian Program Keagamaan */
 
 .program-keagamaan {
-  padding: 60px 0; /* Padding lebih kecil dari versi sebelumnya */
-  background-color: var(--white); /* Background putih atau sesuai keinginan */
+  width: 100%;
+  padding: 80px 20px;
+  background-color: var(--light-gray);
+  font-family: "Roboto Slab", serif;
+  color: var(--dark-gray);
 }
 
 .program-header {
   text-align: center;
-  margin-bottom: 40px;
+  padding: 50px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .program-header h2 {
-  font-size: 2.8em;
+  font-size: 3em;
   color: var(--primary-color);
+  margin-bottom: 15px;
   font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.program-header h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--hover-color);
+  border-radius: 2px;
+}
+
+.program-header p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--dark-gray);
 }
 
 .program-main-content {
   display: flex;
-  flex-wrap: wrap; /* Agar bisa wrap di mobile */
-  gap: 30px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  align-items: flex-start;
+}
+
+.program-video-section {
+  flex: 2;
+  min-width: 400px;
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px var(--box-shadow-light);
+}
+
+.program-video-section h3 {
+  font-size: 2em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .program-video-embed {
-  flex: 2; /* Mengambil 2/3 ruang */
-  min-width: 320px; /* Minimal lebar agar tidak terlalu kecil */
-  position: relative; /* Untuk aspect ratio trick */
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 * 100%) */
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
   height: 0;
-  overflow: hidden; /* Penting untuk iframe */
-  background-color: #000; /* Background hitam saat video belum load */
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 6px;
 }
 
 .program-video-embed iframe {
@@ -61,88 +107,197 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 8px; /* Sudut melengkung untuk iframe */
-  box-shadow: 0 4px 15px var(--box-shadow-light);
+  border: 0;
+}
+
+.video-description {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95em;
 }
 
 .program-sidebar {
-  flex: 1; /* Mengambil 1/3 ruang */
-  min-width: 280px; /* Minimal lebar sidebar */
-  background-color: var(--light-gray);
-  border-radius: 8px;
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sidebar-widget {
+  background-color: var(--white);
   padding: 20px;
+  border-radius: 8px;
   box-shadow: 0 4px 15px var(--box-shadow-light);
 }
 
 .sidebar-widget h4 {
-  font-size: 1.2em;
-  color: var(--secondary-color);
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.sidebar-widget iframe {
-  border-radius: 6px; /* Sudut melengkung untuk map iframe */
-  width: 100%;
-  height: 250px; /* Tinggi default untuk map */
-}
-
-/* Thumbnail Grid Styling */
-h3 {
-  font-size: 2.2em;
+  font-size: 1.3em;
   color: var(--primary-color);
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   text-align: center;
-  font-weight: 700;
+  position: relative;
+  padding-bottom: 8px;
 }
+
+.sidebar-widget h4::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: var(--hover-color);
+}
+
+.sidebar-widget p {
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #555;
+}
+
+.map-embed {
+  margin-top: 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.8em;
+  color: var(--primary-color);
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: var(--hover-color);
+  border-radius: 2px;
+}
+
+/* Program Grid */
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.program-item {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px var(--box-shadow-light);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.program-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--hover-color);
+}
+
+.program-item h4 {
+  font-size: 1.5em;
+  color: var(--secondary-color);
+  margin: 20px 15px 10px 15px;
+  font-weight: 600;
+}
+
+.program-item p {
+  font-size: 0.95em;
+  color: #666;
+  padding: 0 15px 20px 15px;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.program-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.program-button:hover {
+  background-color: var(--hover-color);
+}
+
+/* Thumbnail Gallery */
 
 .program-thumbnail-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(250px, 1fr)
-  ); /* Kolom responsif */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
-  margin-bottom: 50px; /* Jarak antar grid section */
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  margin-top: 40px;
 }
 
 .thumbnail-item {
   background-color: var(--white);
-  border: 1px solid var(--border-color);
   border-radius: 8px;
-  overflow: hidden; /* Penting agar gambar tidak keluar dari border-radius */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .thumbnail-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .thumbnail-item img {
   width: 100%;
-  height: 200px; /* Tinggi tetap untuk gambar thumbnail */
-  object-fit: cover; /* Pastikan gambar mengisi area tanpa terdistorsi */
-  display: block; /* Menghilangkan spasi ekstra di bawah gambar */
-  margin-bottom: 15px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.thumbnail-info {
+  padding: 15px;
+  text-align: center;
 }
 
 .thumbnail-title {
-  font-size: 1.1em;
-  font-weight: 600;
+  font-size: 1.15em;
   color: var(--secondary-color);
   margin-bottom: 5px;
-  padding: 0 15px;
 }
 
 .thumbnail-desc {
-  font-size: 0.9em;
-  color: var(--dark-gray);
-  line-height: 1.5;
-  padding: 0 15px 15px 15px; /* Padding bawah agar tidak mepet */
+  font-size: 0.88em;
+  color: #777;
 }
 
 /* Bagian Footer */
@@ -257,81 +412,63 @@ h3 {
 /* Media Query Program Keagamaan */
 
 @media screen and (max-width: 992px) {
-  .program-header h2 {
-    font-size: 2.4em;
-  }
-
   .program-main-content {
-    flex-direction: column; /* Tumpuk di mobile */
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .program-video-embed,
+  .program-video-section,
   .program-sidebar {
-    flex: none; /* Reset flex */
-    width: 100%; /* Ambil lebar penuh */
-    min-width: unset; /* Hapus min-width */
+    width: 100%;
+    max-width: 600px;
+    min-width: unset;
   }
 
-  .program-sidebar {
-    padding: 15px;
-  }
-
-  h3 {
-    font-size: 1.8em;
-  }
-
-  .program-thumbnail-grid {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(220px, 1fr)
-    ); /* Kolom lebih kecil */
-    gap: 20px;
-  }
-  .thumbnail-item img {
-    height: 180px; /* Sesuaikan tinggi gambar */
+  .program-header h2,
+  .section-title {
+    font-size: 2.5em;
   }
 }
 
 @media screen and (max-width: 768px) {
   .program-keagamaan {
-    padding: 40px 0;
+    padding: 60px 15px;
   }
+
   .program-header h2 {
     font-size: 2em;
   }
 
-  .program-main-content {
-    gap: 15px;
+  .program-header p {
+    font-size: 1em;
   }
 
-  .program-video-embed {
-    padding-bottom: 65%; /* Lebih tinggi di layar kecil agar video lebih terlihat */
+  .program-video-section h3 {
+    font-size: 1.8em;
   }
 
   .sidebar-widget h4 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
-  .sidebar-widget iframe {
-    height: 200px; /* Sesuaikan tinggi map */
+  .section-title {
+    font-size: 2.2em;
   }
 
-  h3 {
-    font-size: 1.6em;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  .program-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
   }
 
-  .program-thumbnail-grid {
-    grid-template-columns: 1fr; /* Satu kolom di layar sangat kecil */
-    gap: 15px;
+  .program-item h4 {
+    font-size: 1.3em;
   }
+
   .thumbnail-item img {
-    height: 220px; /* Lebih tinggi untuk satu kolom */
+    height: 180px;
   }
   .thumbnail-title {
-    font-size: 1em;
+    font-size: 1.05em;
   }
   .thumbnail-desc {
     font-size: 0.85em;
@@ -340,32 +477,65 @@ h3 {
 
 @media screen and (max-width: 480px) {
   .program-keagamaan {
-    padding: 30px 0;
+    padding: 40px 10px;
   }
+
   .program-header h2 {
+    font-size: 1.8em;
+  }
+
+  .program-header p {
+    font-size: 0.9em;
+  }
+
+  .program-video-section h3 {
     font-size: 1.6em;
   }
 
   .program-video-embed {
-    padding-bottom: 75%; /* Lebih tinggi lagi */
+    padding-bottom: 70%;
   }
 
   .sidebar-widget {
-    padding: 10px;
+    padding: 15px;
   }
-  .sidebar-widget h4 {
-    font-size: 1em;
-  }
-
-  h3 {
-    font-size: 1.4em;
+  .sidebar-widget p {
+    font-size: 0.9em;
   }
 
+  .section-title {
+    font-size: 1.9em;
+  }
+
+  .program-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .program-item img {
+    height: 180px;
+  }
+  .program-item h4 {
+    font-size: 1.2em;
+  }
+  .program-item p {
+    font-size: 0.88em;
+  }
+
+  .program-button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .program-thumbnail-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
   .thumbnail-item img {
-    height: 180px; /* Sesuaikan tinggi gambar lagi */
+    height: 200px;
   }
   .thumbnail-title {
-    font-size: 0.95em;
+    font-size: 1em;
   }
   .thumbnail-desc {
     font-size: 0.8em;

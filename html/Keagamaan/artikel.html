@@ -137,6 +137,319 @@
       </nav>
     </div>
 
+    <!-- Artikel -->
+    <section id="artikel" class="artikel-listing-section">
+      <div class="artikel-container">
+        <div class="artikel-section-header">
+          <h2>Artikel</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Blanditiis, recusandae.
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="image-section">
+              <img
+                src="/image/artikel-image/artikel-1.jpg"
+                alt="artikel-1-dosa-digugurkan"
+              />
+            </div>
+            <div class="content">
+              <h4>Ingin dosa setahun lalu dan yang akan datang digugurkan?</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+                excepturi officia cum, pariatur deleniti ipsum libero enim saepe
+                fuga sunt quas? Maiores inventore quo laudantium?
+              </p>
+              <a href="#artikel-1" onclick="showArtikel('artikel-1')"
+                >Baca Selengkapnya</a
+              >
+            </div>
+            <div class="tanggal-posting">
+              <p>4 Juni, 2025</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-section">
+              <img src="/image/artikel-image/artikel-2.jpg" alt="artikel-2" />
+            </div>
+            <div class="content">
+              <h4>Hari Raya Idhul Adha 1446 H/2025 M</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+                excepturi officia cum, pariatur deleniti ipsum libero enim saepe
+                fuga sunt quas? Maiores inventore quo laudantium?
+              </p>
+              <a href="#artikel-2" onclick="showArtikel('artikel-2')"
+                >Baca Selengkapnya</a
+              >
+            </div>
+            <div class="tanggal-posting">
+              <p>6 Juni, 2025</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-section">
+              <img src="/image/artikel-image/artikel-3.jpg" alt="artikel-3" />
+            </div>
+            <div class="content">
+              <h4>
+                Sosialisasi program sekolah & Pembagian perlengkapan siswa
+              </h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+                excepturi officia cum, pariatur deleniti ipsum libero enim saepe
+                fuga sunt quas? Maiores inventore quo laudantium?
+              </p>
+              <a href="#artikel-3" onclick="showArtikel('artikel-3')"
+                >Baca Selengkapnya</a
+              >
+            </div>
+            <div class="tanggal-posting">
+              <p>10 Juli, 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News 1 -->
+    <section id="artikel-1" class="artikel-detail-section">
+      <div class="artikel-detail-wrapper">
+        <div class="artikel-main-content">
+          <h2 class="artikel-title">
+            Ingin dosa setahun lalu dan yang akan datang digugurkan?
+          </h2>
+          <div class="artikel-meta">
+            <span class="date"
+              ><i class="bi bi-calendar-event"></i> 04/06/2025</span
+            >
+            <span class="author"><i class="bi bi-person"></i> Oleh Admin</span>
+          </div>
+
+          <div class="artikel-image-lg">
+            <img
+              src="/image/artikel-image/artikel-1.jpg"
+              alt="ARTIKEL DOSA DIGUGURKAN"
+            />
+          </div>
+
+          <div class="artikel-text">
+            <p>
+              <em>Bekasi</em>,Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Hic commodi consequuntur facilis est corrupti reiciendis
+              doloremque accusamus distinctio voluptatibus repudiandae!
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              pariatur nostrum nam et asperiores, nihil voluptas dolorum sint
+              voluptatem dolores.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              pariatur nostrum nam et asperiores, nihil voluptas dolorum sint
+              voluptatem dolores.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              pariatur nostrum nam et asperiores, nihil voluptas dolorum sint
+              voluptatem dolores.
+            </p>
+          </div>
+        </div>
+
+        <div class="artikel-sidebar">
+          <div class="sidebar-block recent-artikel">
+            <div class="sidebar-title">Artikel Terbaru</div>
+            <ul>
+              <li>
+                <a href="#artikel-2" onclick="showArtikel('artikel-2')"
+                  >Hari Raya Idhul Adha 1446 H/2025 M</a
+                >
+              </li>
+              <li>
+                <a href="#artikel-3" onclick="showArtikel('artikel-3')"
+                  >Sosialisasi program sekolah & Pembagian perlengkapan siswa</a
+                >
+              </li>
+              <li>
+                <a href="#artikel" onclick="showArtikelListing()"
+                  >Lihat Semua Artikel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="artikel-nav-buttons">
+        <button onclick="showArtikelListing()">
+          <i class="bi bi-arrow-left-circle"></i> Kembali ke Daftar
+        </button>
+        <button onclick="showArtikelListing()">
+          <i class="bi bi-x-circle"></i> Tutup Detail
+        </button>
+        <button onclick="showArtikel('artikel-2')">
+          Artikel Selanjutnya <i class="bi bi-arrow-right-circle"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- News 2 -->
+    <section
+      id="artikel-2"
+      class="artikel-detail-section"
+      style="display: none"
+    >
+      <div class="artikel-detail-wrapper">
+        <div class="artikel-main-content">
+          <h2 class="artikel-title">Hari Raya Idhul Adha 1446 H/2025 M</h2>
+          <div class="artikel-meta">
+            <span class="date"
+              ><i class="bi bi-calendar-event"></i> 06/06/2025</span
+            >
+            <span class="author"><i class="bi bi-person"></i> Oleh Admin</span>
+          </div>
+
+          <div class="artikel-image-lg">
+            <img
+              src="/image/artikel-image/artikel-2.jpg"
+              alt="hari raya Idhul adha"
+            />
+          </div>
+
+          <div class="artikel-text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              pariatur nostrum nam et asperiores, nihil voluptas dolorum sint
+              voluptatem dolores.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              pariatur nostrum nam et asperiores, nihil voluptas dolorum sint
+              voluptatem dolores.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              pariatur nostrum nam et asperiores, nihil voluptas dolorum sint
+              voluptatem dolores.
+            </p>
+          </div>
+        </div>
+
+        <div class="artikel-sidebar">
+          <div class="sidebar-block recent-artikel">
+            <div class="sidebar-title">Artikel Terbaru</div>
+            <ul>
+              <li>
+                <a href="#artikel-1" onclick="showArtikel('artikel-1')"
+                  >Ingin dosa setahun lalu dan yang akan datang digugurkan?
+                </a>
+              </li>
+              <li>
+                <a href="#artikel-3" onclick="showArtikel('artikel-3')"
+                  >Sosialisasi program sekolah & Pembagian perlengkapan siswa</a
+                >
+              </li>
+              <li>
+                <a href="#artikel" onclick="showArtikelListing()"
+                  >Lihat Semua Artikel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="artikel-nav-buttons">
+        <button onclick="showArtikel('artikel-1')">
+          <i class="bi bi-arrow-left-circle"></i> Artikel Sebelumnya
+        </button>
+        <button onclick="showArtikelListing()">
+          <i class="bi bi-x-circle"></i> Tutup Detail
+        </button>
+        <button onclick="showArtikel('artikel-3')">
+          Artikel Selanjutnya <i class="bi bi-arrow-right-circle"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- News 3 -->
+    <section
+      id="artikel-3"
+      class="artikel-detail-section"
+      style="display: none"
+    >
+      <div class="artikel-detail-wrapper">
+        <div class="artikel-main-content">
+          <h2 class="artikel-title">
+            Sosialisasi program sekolah & Pembagian perlengkapan siswa
+          </h2>
+          <div class="artikel-meta">
+            <span class="date"
+              ><i class="bi bi-calendar-event"></i> 10/07/2025</span
+            >
+            <span class="author"><i class="bi bi-person"></i> Oleh Admin</span>
+          </div>
+
+          <div class="artikel-image-lg">
+            <img src="/image/artikel-image/artikel-3.jpg" alt="Sosialisasi" />
+          </div>
+
+          <div class="artikel-text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              pariatur nostrum nam et asperiores, nihil voluptas dolorum sint
+              voluptatem dolores.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              pariatur nostrum nam et asperiores, nihil voluptas dolorum sint
+              voluptatem dolores.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              pariatur nostrum nam et asperiores, nihil voluptas dolorum sint
+              voluptatem dolores.
+            </p>
+          </div>
+        </div>
+
+        <div class="artikel-sidebar">
+          <div class="sidebar-block recent-artikel">
+            <div class="sidebar-title">Artikel Terbaru</div>
+            <ul>
+              <li>
+                <a href="#artikel-1" onclick="showArtikel('artikel-1')"
+                  >Ingin dosa setahun lalu dan yang akan datang digugurkan?</a
+                >
+              </li>
+              <li>
+                <a href="#artikel-2" onclick="showArtikel('artikel-2')"
+                  >Hari Raya Idhul Adha 1446 H/2025 M</a
+                >
+              </li>
+              <li>
+                <a href="#artikel" onclick="showArtikelListing()"
+                  >Lihat Semua Artikel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="artikel-nav-buttons">
+        <button onclick="showArtikel('artikel-2')">
+          <i class="bi bi-arrow-left-circle"></i> Artikel Sebelumnya
+        </button>
+        <button onclick="showArtikelListing()">
+          <i class="bi bi-x-circle"></i> Tutup Detail
+        </button>
+        <button onclick="showArtikel('artikel-1')">
+          Artikel Selanjutnya <i class="bi bi-arrow-right-circle"></i>
+        </button>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer-lengkap">
       <div class="footer-container">
@@ -220,3 +533,6 @@
 
 <!-- Link Javascript home -->
 <script src="/script.js"></script>
+
+<!-- Link Javascript Artikel -->
+<script src="/javascript/artikel.js"></script>

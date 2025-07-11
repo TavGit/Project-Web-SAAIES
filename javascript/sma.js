@@ -29,20 +29,20 @@ const newsItems = [
     id: "news-1",
     title: "Kegiatan PPDB Gelombang Ke - 1",
     description: "Pelaksanaan kegiatan tes ppdb gelombang pertama",
-    image: "/image/news-image/news-1/news-1-kegiatan-ppdb.jpg",
+    image: "../../image/news-image/news-1/news-1-kegiatan-ppdb.jpgg",
   },
   {
     id: "news-2",
     title: "Tes Penerimaan & Microteaching Guru Baru",
     description:
       "Informasi tentang tes penerimaan dan microteaching guru baru.",
-    image: "/image/news-image/news-2/news-2.jpg",
+    image: "../../image/news-image/news-2/news-2.jpg",
   },
   {
     id: "news-3",
     title: "Rapat Kerja Tahun Ajaran 2025/2026",
     description: "Detail mengenai rapat kerja tahun ajaran baru.",
-    image: "/image/news-image/news-3/news-3.jpg",
+    image: "../../image/news-image/news-3/news-3.jpg",
   },
 ];
 
@@ -75,7 +75,7 @@ function updateHoverFotoContent() {
     hoverFotoImage.src = news.image;
     hoverFotoImage.alt = news.title;
     // Link ke halaman news.html dengan parameter ID news
-    hoverFotoDetailsLink.href = `/html/Tentang-Kami/news.html?newsId=${news.id}`;
+    hoverFotoDetailsLink.href = `../Tentang-Kami/news.html#news?newsId=${news.id}`;
   }
 }
 

@@ -17,8 +17,8 @@
 
 .kontak-section {
   padding: 80px 20px;
-  background-color: var(--light-gray); /* Latar belakang lebih netral */
-  font-family: "Open Sans", sans-serif; /* Konsisten dengan font body */
+  background-color: var(--light-gray);
+  font-family: "Open Sans", sans-serif;
   color: var(--text-color);
 }
 
@@ -54,19 +54,18 @@
 }
 
 .kontak-content-wrapper {
-  display: flex; /* Mengaktifkan layout 2 kolom */
-  flex-wrap: wrap; /* Izinkan wrap di layar kecil */
-  gap: 40px; /* Jarak antar kolom */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: flex-start; /* Sejajarkan item ke atas */
+  align-items: flex-start;
 }
 
-/* Gaya untuk Peta dan Info Kontak */
 .kontak-info-map {
-  flex: 1 1 450px; /* Ambil sebagian ruang, bisa menyusut/membesar, basis 450px */
+  flex: 1 1 450px;
   display: flex;
-  flex-direction: column; /* Peta di atas info */
+  flex-direction: column;
   gap: 30px;
   background-color: #fff;
   padding: 25px;
@@ -76,9 +75,9 @@
 
 .kontak-map iframe {
   width: 100%;
-  height: 350px; /* Tinggi peta disesuaikan */
-  border-radius: 8px; /* Sudut membulat untuk peta */
-  overflow: hidden; /* Pastikan sudut peta rapi */
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .kontak-details h3 {
@@ -92,13 +91,13 @@
   margin: 10px 0;
   font-size: 1em;
   color: var(--text-color);
-  display: flex; /* Untuk menata ikon dan teks */
+  display: flex;
   align-items: center;
 }
 
 .kontak-details i {
   margin-right: 10px;
-  color: var(--hover-color); /* Warna ikon yang menonjol */
+  color: var(--hover-color);
   font-size: 1.2em;
 }
 
@@ -112,9 +111,8 @@
   color: var(--hover-color);
 }
 
-/* Gaya untuk Formulir Kontak */
 .kontak-form-wrapper {
-  flex: 1 1 450px; /* Ambil sebagian ruang, bisa menyusut/membesar, basis 450px */
+  flex: 1 1 450px;
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
@@ -134,7 +132,7 @@
 }
 
 .kontak-form label {
-  display: block; /* Agar label di atas input */
+  display: block;
   margin-bottom: 8px;
   font-weight: 600;
   color: var(--text-color);
@@ -158,17 +156,17 @@
 .kontak-form input:focus,
 .kontak-form textarea:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px var(--primary-color); /* Bayangan fokus lembut */
+  box-shadow: 0 0 0 3px var(--primary-color);
   outline: none;
 }
 
 .kontak-form textarea {
-  resize: vertical; /* Hanya izinkan resize vertikal */
+  resize: vertical;
   min-height: 100px;
 }
 
 .submit-button {
-  display: block; /* Agar tombol memenuhi lebar penuh */
+  display: block;
   width: 100%;
   padding: 15px 25px;
   background-color: var(--primary-color);
@@ -311,14 +309,14 @@
     font-size: 1em;
   }
   .kontak-content-wrapper {
-    flex-direction: column; /* Kolom ditumpuk di layar sedang */
+    flex-direction: column;
     gap: 30px;
   }
   .kontak-info-map,
   .kontak-form-wrapper {
-    flex: 1 1 100%; /* Ambil lebar penuh */
-    max-width: 600px; /* Batasi lebar untuk tampilan lebih baik */
-    margin: 0 auto; /* Tengah di layar sedang */
+    flex: 1 1 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
   .kontak-details h3 {
     font-size: 1.6em;

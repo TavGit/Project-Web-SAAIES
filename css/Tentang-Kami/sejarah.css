@@ -218,6 +218,266 @@
 /* Media Query untuk tampilan mobile */
 /* ==================== */
 
+/* Media Query Sejarah  dan Lokasi*/
+
+@media (min-width: 480px) {
+  /* Bagian Sejarah */
+  .sejarah .image-wrapper,
+  .sejarah .image-wrapper img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .sejarah-item h1 {
+    font-size: 2.2em;
+  }
+
+  /* Bagian Sejarah Caption */
+  .sejarah-caption .caption-1,
+  .sejarah-caption .caption-2 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 25px auto;
+    padding: 18px;
+  }
+
+  /* Bagian Lokasi */
+  .lokasi {
+    padding: 25px 15px;
+  }
+
+  .lokasi-map iframe {
+    height: 300px;
+  }
+
+  .lokasi-info {
+    padding: 18px;
+    gap: 16px;
+  }
+
+  .lokasi-item h3 {
+    font-size: 1.25em;
+  }
+
+  .lokasi-item p {
+    font-size: 14.5px;
+  }
+}
+
+@media (min-width: 576px) {
+  /* Bagian Sejarah */
+  .sejarah .image-wrapper,
+  .sejarah .image-wrapper img {
+    width: 320px;
+    height: 190px;
+  }
+
+  .sejarah-item h1 {
+    font-size: 2.5em;
+  }
+
+  /* Bagian Sejarah Caption */
+  .sejarah-caption .caption-1,
+  .sejarah-caption .caption-2 {
+    font-size: 16.5px;
+    line-height: 1.7;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  /* Bagian Lokasi */
+  .lokasi {
+    padding: 30px 20px;
+  }
+
+  .lokasi-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .lokasi-map iframe {
+    height: 320px;
+  }
+
+  .lokasi-info {
+    padding: 20px;
+    gap: 18px;
+  }
+
+  .lokasi-item h3 {
+    font-size: 1.3em;
+  }
+
+  .lokasi-item p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Bagian Sejarah */
+  .sejarah .image-wrapper,
+  .sejarah .image-wrapper img {
+    width: 350px;
+    height: 200px;
+  }
+
+  .sejarah-item h1 {
+    font-size: 2em;
+  }
+
+  /* Bagian Sejarah Caption */
+  .sejarah-caption .caption-1,
+  .sejarah-caption .caption-2 {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  /* Bagian Lokasi */
+  .lokasi {
+    padding: 30px 20px;
+  }
+
+  .lokasi-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+  }
+
+  .lokasi-map iframe {
+    height: 350px;
+  }
+
+  .lokasi-info {
+    padding: 20px;
+    gap: 18px;
+  }
+
+  .lokasi-item h3 {
+    font-size: 1.3em;
+  }
+
+  .lokasi-item p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Bagian Sejarah */
+  .sejarah .image-wrapper,
+  .sejarah .image-wrapper img {
+    width: 380px;
+    height: 230px;
+  }
+
+  .sejarah-item h1 {
+    font-size: 3.2em;
+  }
+
+  /* Bagian Sejarah Caption */
+  .sejarah-caption .caption-1,
+  .sejarah-caption .caption-2 {
+    font-size: 17.5px;
+    line-height: 1.75;
+    margin: 35px auto;
+    padding: 20px;
+  }
+
+  /* Bagian Lokasi */
+  .lokasi {
+    padding: 35px 20px;
+  }
+
+  .lokasi-container {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 28px;
+  }
+
+  .lokasi-map iframe {
+    height: 380px;
+  }
+
+  .lokasi-info {
+    padding: 20px;
+    gap: 19px;
+  }
+
+  .lokasi-item h3 {
+    font-size: 1.4em;
+  }
+
+  .lokasi-item p {
+    font-size: 15.5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Bagian Sejarah */
+  .sejarah .image-wrapper,
+  .sejarah .image-wrapper img {
+    width: 400px;
+    height: 250px;
+    margin: 40px auto;
+  }
+
+  .sejarah-item h1 {
+    font-size: 2em;
+  }
+
+  /* Bagian Sejarah Caption */
+  .sejarah-caption .caption-1,
+  .sejarah-caption .caption-2 {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  /* Bagian Lokasi */
+  .lokasi {
+    padding: 40px 20px;
+  }
+
+  .lokasi-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+  }
+
+  .lokasi-map iframe {
+    height: 400px;
+  }
+
+  .lokasi-info {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .lokasi-item h3 {
+    font-size: 1.5em;
+  }
+
+  .lokasi-item p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sejarah .image-wrapper,
+  .sejarah .image-wrapper img {
+    width: 450px;
+    height: 280px;
+  }
+
+  .sejarah-caption .caption-1,
+  .sejarah-caption .caption-2 {
+    max-width: 900px;
+  }
+
+  .lokasi-container {
+    max-width: 1400px;
+  }
+}
+
 /* Media Query Segera Daftar */
 
 @media (max-width: 768px) {

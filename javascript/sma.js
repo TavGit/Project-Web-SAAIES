@@ -29,7 +29,7 @@ const newsItems = [
     id: "news-1",
     title: "Kegiatan PPDB Gelombang Ke - 1",
     description: "Pelaksanaan kegiatan tes ppdb gelombang pertama",
-    image: "../../image/news-image/news-1/news-1-kegiatan-ppdb.jpgg",
+    image: "../../image/news-image/news-1/news-1-kegiatan-ppdb.jpg",
   },
   {
     id: "news-2",

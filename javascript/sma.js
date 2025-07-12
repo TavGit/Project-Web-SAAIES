@@ -75,7 +75,7 @@ function updateHoverFotoContent() {
     hoverFotoImage.src = news.image;
     hoverFotoImage.alt = news.title;
     // Link ke halaman news.html dengan parameter ID news
-    hoverFotoDetailsLink.href = `../Tentang-Kami/news.html#news?newsId=${news.id}`;
+    hoverFotoDetailsLink.href = `../Tentang-Kami/news.html?newsId=${news.id}#${news.id}`;
   }
 }
 

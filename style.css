@@ -122,7 +122,6 @@ body.no-scroll {
 
 /* BAGIAN NAVBAR DROPDOWN (Desktop)*/
 .navbar ul li ul.dropdown {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -132,9 +131,14 @@ body.no-scroll {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 999;
   flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.navbar ul li ul.dropdown.show {
+.navbar ul li:hover > ul.dropdown {
+  opacity: 1;
+  visibility: visible;
   display: flex;
 }
 

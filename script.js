@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuToggle.addEventListener("click", toggleMobileMenu);
 
-  // Handle dropdown toggle
+  // Handle dropdown toggle (khusus untuk mobile)
   const topLevelLinks = document.querySelectorAll(".navbar ul > li > a");
 
   topLevelLinks.forEach((link) => {
@@ -26,29 +26,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown && dropdown.classList.contains("dropdown")) {
       link.addEventListener("click", function (e) {
-        e.preventDefault();
-        // Tutup dropdown lain
-        document.querySelectorAll(".dropdown.show").forEach((d) => {
-          if (d !== dropdown) d.classList.remove("show");
-        });
-        document
-          .querySelectorAll(".navbar ul > li > a i.bi")
-          .forEach((icon) => {
-            icon.classList.remove("bi-caret-up-fill");
-            icon.classList.add("bi-caret-down-fill");
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+
+          document.querySelectorAll(".dropdown.show").forEach((d) => {
+            if (d !== dropdown) d.classList.remove("show");
           });
 
-        dropdown.classList.toggle("show");
-        const icon = this.querySelector("i.bi");
-        if (icon) {
-          icon.classList.toggle(
-            "bi-caret-up-fill",
-            dropdown.classList.contains("show")
-          );
-          icon.classList.toggle(
-            "bi-caret-down-fill",
-            !dropdown.classList.contains("show")
-          );
+          document
+            .querySelectorAll(".navbar ul > li > a i.bi")
+            .forEach((icon) => {
+              if (icon.closest("li").querySelector(".dropdown") !== dropdown) {
+                icon.classList.remove("bi-caret-up-fill");
+                icon.classList.add("bi-caret-down-fill");
+              }
+            });
+
+          dropdown.classList.toggle("show");
+          const icon = this.querySelector("i.bi");
+          if (icon) {
+            icon.classList.toggle(
+              "bi-caret-up-fill",
+              dropdown.classList.contains("show")
+            );
+            icon.classList.toggle(
+              "bi-caret-down-fill",
+              !dropdown.classList.contains("show")
+            );
+          }
         }
       });
     }
@@ -56,13 +61,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Klik link biasa menutup menu
   navbar.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
+    link.addEventListener("click", function () {
       if (window.innerWidth <= 768) {
-        const isDropdown =
-          link.nextElementSibling &&
-          link.nextElementSibling.classList.contains("dropdown");
-        if (!isDropdown) {
+        const isDropdownParent =
+          link.parentElement && link.parentElement.querySelector(".dropdown");
+        const isDropdownItem = link.closest(".dropdown");
+
+        if (!isDropdownParent || isDropdownItem) {
           toggleMobileMenu();
+          document
+            .querySelectorAll(".dropdown.show")
+            .forEach((d) => d.classList.remove("show"));
+          document.querySelectorAll(".navbar ul li a i.bi").forEach((icon) => {
+            icon.classList.remove("bi-caret-up-fill");
+            icon.classList.add("bi-caret-down-fill");
+          });
         }
       }
     });
@@ -76,12 +89,13 @@ document.addEventListener("DOMContentLoaded", function () {
       humburgerIcon.style.display = "block";
       closeIcon.style.display = "none";
 
-      // Reset dropdowns
+      // Reset dropdowns (transisi dari mobile ke desktop)
       document
         .querySelectorAll(".dropdown.show")
         .forEach((d) => d.classList.remove("show"));
       document.querySelectorAll(".navbar ul li a i.bi").forEach((icon) => {
-        icon.classList.remove("bi-caret-up-fill", "bi-caret-down-fill");
+        icon.classList.remove("bi-caret-up-fill");
+        icon.classList.add("bi-caret-down-fill");
       });
     }
   });
